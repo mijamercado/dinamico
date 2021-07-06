@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('selector','DepartamentosController@seleccion')->name('selector');
+Route::post('provincias','DepartamentosController@provincias')->name('provincias');
